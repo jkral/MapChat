@@ -15,7 +15,9 @@ var io = require('socket.io')(http);
 // Express Configuration
 // -----------------------------------------------------
 // Sets the connection to MongoDB
-mongoose.connect("mongodb://localhost/MeanMapApp");
+mongoose.connect("mongodb://heroku_s7dvgm6m:u03nemqufteo8cbquhq4qo1djc@ds045475.mongolab.com:45475/heroku_s7dvgm6m");
+
+// MONGOLAB_URI: mongodb://heroku_s7dvgm6m:u03nemqufteo8cbquhq4qo1djc@ds045475.mongolab.com:45475/heroku_s7dvgm6m
 
 // Logging and Parsing
 app.use(express.static(__dirname + '/public'));                 // sets the static files location to public
