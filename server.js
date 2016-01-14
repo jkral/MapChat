@@ -15,7 +15,7 @@ var io = require('socket.io')(http);
 // Express Configuration
 // -----------------------------------------------------
 // Sets the connection to MongoDB
-// mongoose.connect("mongodb://localhost/MeanMapApp");
+mongoose.connect("mongodb://localhost/MeanMapApp");
 
 // Logging and Parsing
 app.use(express.static(__dirname + '/public'));                 // sets the static files location to public
